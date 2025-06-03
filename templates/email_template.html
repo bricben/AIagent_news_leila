@@ -1,0 +1,8 @@
+<h2>📈 Daily Macro Update</h2>
+{% for item in summaries %}
+<hr>
+<h3>{{ item.title }}</h3>
+<p><b>Summary:</b> {{ item.summary }}</p>
+<p><b>Analysis:</b> {{ item.analysis }}</p>
+<p><a href="{{ item.url }}">[Read More]</a></p>
+{% endfor %}
